@@ -5,14 +5,15 @@ import Legacy from './Legacy';
 import Participate from './Participate';
 import StartPage from './StartPage';
 
+
 const Navbar = () => {
     return (
-        <div>
-            <StartPage />
+        <div className='app-wrapper'>
+             <StartPage />
             <League />
             <Reports />
             <Legacy />
-            <Participate />
+            <Participate /> 
         </div>
     );
 }

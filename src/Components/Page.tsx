@@ -1,6 +1,7 @@
 import React from 'react';
 import LeftSideBar from './LeftSideBar';
 import RightSideBar from './RightSideBar';
+import Navbar from './Navbar/Navbar';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
@@ -13,7 +14,7 @@ const Page = () => {
                         <LeftSideBar />
                     </Col>
                     <Col sm={12} md={8} lg={8}>
-                        <div>Content</div>
+                        <Navbar />
                     </Col>
                     <Col sm={0} md={2} lg={2}>
                         <RightSideBar />

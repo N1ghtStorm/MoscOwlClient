@@ -13,13 +13,15 @@ import Participate from '../Components/Navbar/Participate';
 export default class Header extends Component {
     render() {
         return(
-            <>
-            <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark" >
+            <div className='header'>
+                
+
+            <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" >
                 <Container>
                     <Navbar.Brand href="/">
                         <img 
                         src={logo}
-                        height="50"
+                        height="40"
                         width="110"
                         className="d-inline-block align-top"
                         alt="Logo"
@@ -55,9 +57,9 @@ export default class Header extends Component {
                 <Route exact path="/legacy" component={Legacy} />
                 <Route exact path="/participate" component={Participate} />
                </Switch>
-            </Router>
+        </Router> 
 
-            </>
+            </div>
         )
     }
 }
