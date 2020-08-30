@@ -1,7 +1,6 @@
 import React from 'react';
 import LeftSideBar from './LeftSideBar';
 import RightSideBar from './RightSideBar';
-import Navbar from './Navbar/Navbar';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
@@ -9,20 +8,17 @@ const Page = () => {
     return(
         <div>
             <Container fluid>
-                <Row>
+                {/* <Row>
                     <Col sm={0} md={2} lg={2}>
                         <LeftSideBar />
                     </Col>
                     <Col sm={12} md={8} lg={8}>
-                        <Navbar />
                     </Col>
                     <Col sm={0} md={2} lg={2}>
                         <RightSideBar />
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
-
-        
         </div>
     )
 

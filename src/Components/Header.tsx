@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap'
 import logo from '../Pictures/Logo.png'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -8,9 +8,8 @@ import Reports from '../Components/Reports';
 import Legacy from '../Components/Legacy';
 import Participate from '../Components/Participate';
 
-export default class Header extends Component {
-    render() {
-        return(
+const HeaderNavBar:React.FC = () => {
+        return (
             <div className='header'>
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" >
                 <Container>
@@ -57,5 +56,4 @@ export default class Header extends Component {
             </div>
         )
     }
-}
-
+export default HeaderNavBar;
