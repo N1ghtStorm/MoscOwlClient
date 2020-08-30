@@ -1,11 +1,20 @@
 import React from 'react';
 import css from './App.module.css';
+import { BrowserRouter } from 'react-router-dom';
+import HeaderNavBar from './Components/Header';
+import LeftSideBar from './Components/LeftSideBar';
+import RightSideBar from './Components/RightSideBar';
+import Page from './Components/Page';
 
 const App = () => {
-  return (
-    <div className={css.app}>
-    </div>
-  );
+    return (
+      <BrowserRouter>
+      <div className={css.app}>
+        <HeaderNavBar /> 
+        <Page />
+      </div>
+      </BrowserRouter>
+    );
 }
 
 export default App;
