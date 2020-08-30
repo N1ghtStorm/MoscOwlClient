@@ -1,12 +1,12 @@
 import React from 'react';
 import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap'
-import logo from '../Pictures/Logo.png'
+import logo from '../../Pictures/Logo.png'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import StartPage from './StartPage';
-import League from '../Components/League';
-import Reports from '../Components/Reports';
-import Legacy from '../Components/Legacy';
-import Participate from '../Components/Participate';
+import StartPage from '../StartPage';
+import League from '../League';
+import Reports from '../Reports';
+import Legacy from '../Legacy';
+import Participate from '../Participate';
 
 const HeaderNavBar:React.FC = () => {
         return (
@@ -14,13 +14,13 @@ const HeaderNavBar:React.FC = () => {
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" >
                 <Container>
                     <Navbar.Brand href="/">
-                        <img
+                        {/* <img
                         src={logo}
                         height="40"
                         width="110"
                         className="d-inline-block align-top"
                         alt="Logo"
-                        />
+                        /> */}
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" >
