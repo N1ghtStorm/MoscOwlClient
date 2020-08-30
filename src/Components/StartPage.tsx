@@ -5,8 +5,6 @@ const StartPage = () => {
         <div className='startpage'>
             <div>hdklsahflhslfh</div>
             <div>hdklsahflhslfh</div>
-            
-            
         </div>
     );
 }

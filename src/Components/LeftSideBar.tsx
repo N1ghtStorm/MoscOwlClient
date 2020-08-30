@@ -1,5 +1,5 @@
 import React from 'react';
-import lili from './3kjsklwjckwjc_1.jpg';
+import lili from '../Pictures/3kjsklwjckwjc_1.jpg';
 
 
 const LeftSideBar = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import nissa from './KLD_Nissa_VitalForce_Gallery_0.jpg';
+import nissa from '../Pictures/KLD_Nissa_VitalForce_Gallery_0.jpg';
 
 const RightSideBar = () => {
     return (

@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
 import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap'
-import logo from './Logo.png'
+import logo from '../Pictures/Logo.png'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import StartPage from '../Components/Navbar/StartPage';
-import League from '../Components/Navbar/League';
-import Reports from '../Components/Navbar/Reports';
-import Legacy from '../Components/Navbar/Legacy';
-import Participate from '../Components/Navbar/Participate';
-
-
+import StartPage from './StartPage';
+import League from '../Components/League';
+import Reports from '../Components/Reports';
+import Legacy from '../Components/Legacy';
+import Participate from '../Components/Participate';
 
 export default class Header extends Component {
     render() {
         return(
             <div className='header'>
-                
-
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" >
                 <Container>
                     <Navbar.Brand href="/">
-                        <img 
+                        <img
                         src={logo}
                         height="40"
                         width="110"
@@ -35,10 +31,9 @@ export default class Header extends Component {
                             <Nav.Link href="/reports">Отчеты</Nav.Link>
                             <Nav.Link href="/legacy">Легаси</Nav.Link>
                             <Nav.Link href="/participate">Участвовать в проекте</Nav.Link>
-                            
                         </Nav>
                         <Form inline>
-                            <FormControl 
+                            <FormControl
                             type="text"
                             placeholder="Поиск"
                             className="mr-sm-2"
@@ -57,7 +52,7 @@ export default class Header extends Component {
                 <Route exact path="/legacy" component={Legacy} />
                 <Route exact path="/participate" component={Participate} />
                </Switch>
-        </Router> 
+        </Router>
 
             </div>
         )
