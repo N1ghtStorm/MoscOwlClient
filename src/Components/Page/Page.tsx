@@ -23,13 +23,13 @@ const Page = () => {
             <HeaderNavBar /> 
             <Container fluid>    
                 <Row>
-                    <Col xs={0} md={4} >
+                    <Col>
                         <LeftSideBar />
                     </Col>
-                    <Col xs={0} md={4} >
+                    <Col lg={8}>
                         <ContentContainer />
                     </Col>
-                    <Col xs={0} md={4} >
+                    <Col>
                         <RightSideBar />
                     </Col>
                 </Row>        
