@@ -38,11 +38,9 @@ const LeagueTables = () => {
                 {x.memberId}
             </td>
             <td>
-                {/* временно: */}
                 {x.score}
             </td>
             <td>
-                {/* временно: */}
                 {x.owlScore}
             </td>
             <td>
