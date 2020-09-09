@@ -12,7 +12,7 @@ const HeaderNavBar:React.FC = () => {
                         <Navbar.Collapse id="responsive-navbar-nav" >
                             <Nav className="mr-auto">
                                 <Nav.Link href="/">О Проекте</Nav.Link>
-                                <Nav.Link href="/league">Лига</Nav.Link>
+                                <Nav.Link href="/league">Сводные Таблицы</Nav.Link>
                                 <Nav.Link href="/reports">Отчеты</Nav.Link>
                                 <Nav.Link href="/legacy">Легаси</Nav.Link>
                                 <Nav.Link href="/participate">Участвовать в проекте</Nav.Link>

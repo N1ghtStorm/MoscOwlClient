@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import HeaderNavBar from './Navbar/HeaderNavBar';
+import HeaderNavBar from './HeaderNavBar/HeaderNavBar';
 import LeftSideBar from './SideBars/LeftSideBar';
 import RightSideBar from './SideBars/RightSideBar';
 import ContentContainer from './ContentContainer/ContentContainer';
