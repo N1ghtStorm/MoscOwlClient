@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MemberTournament } from '../../../../../../../../Types/Types';
-import { Table } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
 
 type TournamentTableItemProps = {
     memberTournaments: MemberTournament[];
@@ -8,7 +8,7 @@ type TournamentTableItemProps = {
 }
 
 const TournamentTableItem: React.FC<TournamentTableItemProps> = (props) => {
-
+    let [newRowInputEnabled, setNewRowInputEnabled] = useState(false);
 
     let rows = props.memberTournaments.map(x => 
         <tr>
@@ -26,10 +26,32 @@ const TournamentTableItem: React.FC<TournamentTableItemProps> = (props) => {
                 {/* временно: */}
                 {x.statusId}
             </td>
+            <td>
+                <Button size = "lg">-</Button>
+            </td>
         </tr>    
     )
 
     let tournamentHeaders = <tr><td>Имя</td><td>Очки</td><td>Очки Совы</td><td>Золотой?</td></tr> 
+
+    let newRow = newRowInputEnabled ? <tr>
+                                            <td>
+                                                <input></input>
+                                            </td>
+                                            <td>
+                                                <input></input>
+                                            </td>
+                                            <td>
+                                                <input></input>
+                                            </td>
+                                            <td>
+                                                <input></input>
+                                            </td>
+                                            <td onClick = {() => setNewRowInputEnabled(false)}>
+                                                -
+                                            </td>
+                                        </tr>  
+                                    : <Button onClick = {() => setNewRowInputEnabled(true)}>+</Button>
 
     return (
         <>
@@ -40,6 +62,7 @@ const TournamentTableItem: React.FC<TournamentTableItemProps> = (props) => {
                </thead>
                <tbody>
                     {rows}
+                    {newRow}
                </tbody> 
         </Table>
         </>
