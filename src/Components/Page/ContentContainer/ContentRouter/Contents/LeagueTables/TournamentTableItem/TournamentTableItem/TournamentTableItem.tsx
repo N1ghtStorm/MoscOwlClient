@@ -36,7 +36,7 @@ const TournamentTableItem: React.FC<TournamentTableItemProps> = (props) => {
 
     let newRow = newRowInputEnabled ? <tr>
                                             <td>
-                                                <input></input>
+                                                <input autoFocus></input>
                                             </td>
                                             <td>
                                                 <input></input>
@@ -55,16 +55,16 @@ const TournamentTableItem: React.FC<TournamentTableItemProps> = (props) => {
 
     return (
         <>
-    <h1>{props.date}</h1>
-        <Table striped bordered hover variant="dark">
-               <thead>
-                    {tournamentHeaders}
-               </thead>
-               <tbody>
-                    {rows}
-                    {newRow}
-               </tbody> 
-        </Table>
+            <h1>{props.date}</h1>
+            <Table striped bordered hover variant="dark">
+                <thead>
+                        {tournamentHeaders}
+                </thead>
+                <tbody>
+                        {rows}
+                        {newRow}
+                </tbody> 
+            </Table>
         </>
     );
 }
